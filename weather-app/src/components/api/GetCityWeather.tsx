@@ -4,6 +4,10 @@ import { useQuery } from '@tanstack/react-query';
 type GetCityWeatherProps = {
     city: string;
 }
+
+
+
+
 export default function GetCityWeather(props: GetCityWeatherProps) {
     const { data: weatherData, isLoading, isError, error} = useQuery({
         queryKey: ['data'], 
@@ -20,10 +24,14 @@ export default function GetCityWeather(props: GetCityWeatherProps) {
         }
     
         if (isError) {
-            return <div>Error: {error.message}</div>;
+            return <div>Error: {{ data: weatherData, isLoading, isError, error}.error.message}</div>;
         }
-    
-      return (
-          <div>{JSON.stringify(weatherData)}</div>
-      );
-}
+
+    return (
+        <div>
+            <h1>Weather for {props.city}</h1>
+            <p>Temperature: {weatherData.main.temp}</p>
+            <p>Weather: {weatherData.weather[0].main}</p>
+            <p>Wind Speed:{weatherData.}
+        </div>
+    )
