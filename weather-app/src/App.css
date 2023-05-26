@@ -2,6 +2,10 @@
   margin-top: 2vh;
   text-align: center;
   border: 3px;
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  color: #2c7da8;
 }
 
 
@@ -35,4 +39,47 @@
 
 .SearchBar button[type="submit"]:hover {
   background-color: #2c7da8; /* Darker blue on button hover */
+}
+
+
+.weather-quote .ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.weather-quote .ellipsis.visible {
+  white-space: normal;
+}
+
+.title {
+  margin: 0;
+  font-size: 80px;
+  color: rgba(225, 225, 225, .01);
+  background-image: url("./images/keyframes.jpg");
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+@keyframes animate {
+  0%, 100% {
+    background-position: left top;
+  }
+
+  25% {
+    background-position: right bottom;
+  }
+
+  50% {
+    background-position: left bottom;
+  }
+
+  75% {
+    background-position: right top;
+  }
 }

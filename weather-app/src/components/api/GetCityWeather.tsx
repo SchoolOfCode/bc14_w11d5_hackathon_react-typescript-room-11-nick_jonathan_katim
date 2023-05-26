@@ -41,11 +41,6 @@ export default function GetCityWeather(props: GetCityWeatherProps) {
 
   return (
     <div>
-      <h1>
-        Whether the weather is incredible, or whether the weather is abysmal,
-        The weatherers will forecast you the weather so you can weather any
-        weather and never be weathered down... by the weather.
-      </h1>
       <h2>Weather for '{props.city}'</h2>
       <p>Temperature: {temperatureInCelsius}°C</p>
       {/* <p>Temperature: {weatherData.main.temp}</p> */}
