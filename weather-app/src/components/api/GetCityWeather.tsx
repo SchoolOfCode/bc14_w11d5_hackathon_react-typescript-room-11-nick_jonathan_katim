@@ -19,9 +19,11 @@ export default function GetCityWeather(props: GetCityWeatherProps) {
     queryKey: ["data"],
     queryFn: async () => {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city},uk&appid=0c63ca9f419924f3e5badb3b4760bb53`;
+      if (props.city !== "") {
       const { data } = await axios.get(url);
       console.log("test");
       return data;
+      }
     },
   });
 
@@ -41,11 +43,13 @@ export default function GetCityWeather(props: GetCityWeatherProps) {
 
   return (
     <div>
+      {weatherData ? (<>
       <h2>Weather for '{props.city}'</h2>
       <p>Temperature: {temperatureInCelsius}°C</p>
       {/* <p>Temperature: {weatherData.main.temp}</p> */}
       <p>Weather: {weatherData.weather[0].main}</p>
       <p>Wind Speed: {weatherData.wind.speed}</p>
+      </>) : (<p>Loading</p>)}
     </div>
   );
 }
