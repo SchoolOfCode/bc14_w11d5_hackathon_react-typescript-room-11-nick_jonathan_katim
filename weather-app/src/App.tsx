@@ -3,26 +3,28 @@ import {useState} from 'react';
 import GetCityWeather from './components/api/GetCityWeather';
 import AudioPlayer from './components/AudioPlayer';
 function App() {
+   // variable to set the search term to nothing
   const [searchTerm, setSearchTerm] = useState('');
-
+ // write a function to input the users info
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     setSearchTerm(e.target.value);
   }
-
+  // write a function to listen for the search button to be pressed - set search value
   function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     setSearchTerm(searchTerm);
   }
-
-  // function clearSearch() {
-  //   setSearchTerm("");
-  // }
 
   const [isTextVisible, setIsTextVisible] = useState(false);
 
   function handleEllipsisClick() {
     setIsTextVisible(!isTextVisible);
   }
+
+  // Return the JSX element
+  // text input box
+  //search button -> takes in text input passes to API request
+
 
   return (
   <div className="App">  
