@@ -32,17 +32,17 @@ function App() {
       <button type="submit" onClick={handleClick}>Search</button>
       {/* <button type="submit" onClick={clearSearch}>Clear</button> */}
     </div>
-    <h2 className="weather-quote">
-        Whether the weather is incredible, or whether the weather is abysmal,
-        The Weatherers will forecast you the weather so you can weather any weather,
+    <div className="weather-quote">
+        Whether the weather is incredible, or whether the weather is abysmal, <br />
+        The Weatherers will forecast you the weather so you can weather any weather, <br />
         and never be weathered down...
-        <span
-          className={`ellipsis ${isTextVisible ? 'visible' : ''}`}
-          onClick={handleEllipsisClick}
-        >
-          by the weather.
-        </span>
-      </h2>
+        {isTextVisible && <span> by the weather.</span>}
+        {!isTextVisible && (
+          <span className="ellipsis" onClick={handleEllipsisClick}>
+            .
+          </span>
+        )}
+      </div>
     <AudioPlayer />
     <GetCityWeather city={searchTerm}/>
   </div>

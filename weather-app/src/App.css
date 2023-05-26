@@ -44,6 +44,14 @@
   background-color: #2c7da8; /* Darker blue on button hover */
 }
 
+.weather-quote {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .weather-quote .ellipsis {
   display: inline-block;
