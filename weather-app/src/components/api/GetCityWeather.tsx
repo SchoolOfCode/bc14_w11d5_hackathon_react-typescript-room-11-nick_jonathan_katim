@@ -5,10 +5,10 @@ type GetCityWeatherProps = {
     city: string;
 }
 export default function GetCityWeather(props: GetCityWeatherProps) {
-    const {data, isLoading, isError, error} = useQuery({
+    const {data :weatherData, isLoading, isError, error} = useQuery({
         queryKey: ['data'], 
         queryFn: async () => {
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=0c63ca9f419924f3e5badb3b4760bb53`;
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.city},uk&appid=0c63ca9f419924f3e5badb3b4760bb53`;
             const { data } = await axios.get(url);
             console.log('test');
             return data;
@@ -19,11 +19,11 @@ export default function GetCityWeather(props: GetCityWeatherProps) {
             return <div>Loading...</div>;
         }
     
-        if (isError) {
-            return <div>Error: {error.message}</div>;
-        }
+        // if (isError) {
+        //     return <div>Error: {error.message}</div>;
+        // }
     
       return (
-          <div>{JSON.stringify(data)}</div>
+          <div>{JSON.stringify(weatherData)}</div>
       );
 }
