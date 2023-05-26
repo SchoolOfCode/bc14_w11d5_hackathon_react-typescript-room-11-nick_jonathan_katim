@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react';
+import GetCityWeather from './components/api/GetCityWeather';
 
 function App() {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
+    setSearchTerm(e.target.value);
+  }
+
+  function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
+    e.preventDefault();
+    setSearchTerm(searchTerm);
+  }
+
+  // function clearSearch() {
+  //   setSearchTerm("");
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="App">  
+    <div className="SearchBar">
+      <input type="text" placeholder="Search..." value={searchTerm} onChange={handleChange}/>
+      <button type="submit" onClick={handleClick}>Search</button>
+      {/* <button type="submit" onClick={clearSearch}>Clear</button> */}
     </div>
-  );
+    <GetCityWeather city={searchTerm}/>
+  </div>
+  )
 }
 
 export default App;

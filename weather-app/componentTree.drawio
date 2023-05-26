@@ -1,28 +1,28 @@
 <mxfile host="65bd71144e">
     <diagram id="r5P9yJA5g_xy6N1NQFZW" name="Page-1">
-        <mxGraphModel dx="1033" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="802" dy="652" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5E1629;" vertex="1" parent="1">
+                <mxCell id="3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5E1629;" parent="1" vertex="1">
                     <mxGeometry x="100" y="150" width="330" height="320" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="Search bar&amp;nbsp;&lt;br&gt;1) search for a city&lt;br&gt;2) If there is only one match =&amp;gt; city&lt;br&gt;3) If there in multiple matches =&amp;gt; render a cickable list" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" vertex="1" parent="1">
+                <mxCell id="2" value="Search bar&amp;nbsp;&lt;br&gt;1) search for a city&lt;br&gt;2) If there is only one match =&amp;gt; city&lt;br&gt;3) If there in multiple matches =&amp;gt; render a cickable list" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" parent="1" vertex="1">
                     <mxGeometry x="141.25" y="180" width="247.5" height="125" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Parent Element" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="4" value="Parent Element" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="215" y="150" width="100" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5E1F4F;" vertex="1" parent="1">
+                <mxCell id="5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5E1F4F;" parent="1" vertex="1">
                     <mxGeometry x="440" y="150" width="550" height="320" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Child Elements" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="6" value="Child Elements" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="547.5" y="150" width="115" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;GetWeather Function&lt;/font&gt;&lt;br&gt;- Current Day&lt;br&gt;- Rain level [mm]&lt;br&gt;- Wind speed [kmh]&lt;br&gt;- Temperature [Cel]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" vertex="1" parent="1">
+                <mxCell id="8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;GetWeather Function&lt;/font&gt;&lt;br&gt;- Current Day&lt;br&gt;- Rain level [mm]&lt;br&gt;- Wind speed [kmh]&lt;br&gt;- Temperature [Cel]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" parent="1" vertex="1">
                     <mxGeometry x="790" y="300" width="177.5" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="12" target="8">
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="12" target="8" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="470" y="420"/>
@@ -30,16 +30,16 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="&lt;b&gt;=&amp;gt; GetWeather Function&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" vertex="1" parent="1">
+                <mxCell id="12" value="&lt;b&gt;=&amp;gt; GetWeather Function&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" parent="1" vertex="1">
                     <mxGeometry x="141.25" y="390" width="248.75" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="EXTRA&lt;br&gt;- Render 3 day forecast&lt;br&gt;- Drop down menu for choices of multiple city" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2F315E;" vertex="1" parent="1">
+                <mxCell id="14" value="EXTRA&lt;br&gt;- Render 3 day forecast&lt;br&gt;- Drop down menu for choices of multiple city" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#2F315E;" parent="1" vertex="1">
                     <mxGeometry x="251" y="520" width="369" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Current weather forecast&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#325E1F;" vertex="1" parent="1">
+                <mxCell id="16" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Current weather forecast&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#325E1F;" parent="1" vertex="1">
                     <mxGeometry x="100.63" y="90" width="330" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="17" target="18">
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" parent="1" source="17" target="18" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="470" y="350"/>
@@ -47,19 +47,19 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="17" value="&lt;b&gt;=&amp;gt; CityChoice Function&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" vertex="1" parent="1">
+                <mxCell id="17" value="&lt;b&gt;=&amp;gt; CityChoice Function&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" parent="1" vertex="1">
                     <mxGeometry x="141.26" y="320" width="248.74" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;CityChoice Function&lt;/font&gt;&lt;br&gt;- Display all of the cities that match search string" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" vertex="1" parent="1">
+                <mxCell id="18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;CityChoice Function&lt;/font&gt;&lt;br&gt;- Display all of the cities that match search string" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#42706C;" parent="1" vertex="1">
                     <mxGeometry x="790" y="180" width="177.5" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Props: CityNameList&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="20" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Props: CityNameList&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="547.5" y="200" width="130" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="21" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Props: CityName&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="21" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Props: CityName&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="560" y="335" width="142.5" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="22" value="&amp;lt;Render buttons for each index item&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+                <mxCell id="22" value="&amp;lt;Render buttons for each index item&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
                     <mxGeometry x="600" y="240" width="160" height="50" as="geometry"/>
                 </mxCell>
             </root>
