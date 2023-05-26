@@ -2,10 +2,13 @@
   margin-top: 2vh;
   text-align: center;
   border: 3px;
-  max-width: 70vw;
+  max-width: 95vw;
+  min-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   color: #2c7da8;
+  background-image:url("./images/background.jpg");
+  background-repeat: no-repeat;
 }
 
 
